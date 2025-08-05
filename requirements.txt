@@ -1,0 +1,21 @@
+# Core data processing
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Web scraping and automation
+selenium>=4.0.0
+beautifulsoup4>=4.11.0
+requests>=2.28.0
+
+# AI and machine learning
+openai>=1.0.0
+
+
+# Data analysis and visualization
+matplotlib>=3.5.0
+geopandas>=0.12.0  # Spatial data analysis
+statsmodels>=0.13.0  # Statistical modeling and regression
+pysal>=2.7.0  # Spatial statistics and analysis
+
+# File handling and utilities
+python-dateutil>=2.8.0 
