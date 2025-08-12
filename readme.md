@@ -32,43 +32,47 @@ pip install -r requirements.txt
   "redcap_token": "your_redcap_token"
 }
 ```
-2. Creat the "Data" folder with the following structure:
-├── Data/                           
-    ├── structured_conversations.csv 
-    ├── raw_conversations.csv        
-    ├── merged_data.csv             
-    └── Demographics.csv     
+2. The project structure is organized with supplementary materials in the "Supplementary S10-16" folder:
+   - All code files are located in `Supplementary S10-16/`
+   - Data files are in `Supplementary S10-16/Data/`
+   - Example data is in `Supplementary S10-16/S16 Example Data/`     
       
 
 ## Project Directory
 
 ```
 Line-Chabot-Code/
-├── webscraper.py                    # Webscraping from webhook, parsing and AI-based data structuring
-├── Email.py                         # Email automation system using Google STMP
-├── Join.py                          # Data merging between demographics form and conversation data
-├── Data analysis.py                 # Pseudo Data analysis and visualization
-├── Generator.r                      # R script for data generation
-├── redcap_api.py                    # Request REDCap API to export data
+├── .git/                            # Git repository
+├── Supplementary S10-16/            # Supplementary materials for academic submission
+│   ├── S10 Email Code.py            # Email automation system using Google SMTP
+│   ├── S11 Data Analysis Code.py    # Data analysis and visualization
+│   ├── S12 REDCap API Code.py       # REDCap API integration for data export
+│   ├── S13 Webscraper Code.py       # Webscraping from webhook, parsing and AI-based data structuring
+│   ├── S14 Data Join Code.py        # Data merging between Registration and conversation data
+│   ├── S15 Data Generator Code.R    # R script for simulated data generation
+│   ├── Data/                        # Output data directory (ignored by git)
+│   │   ├── structured_conversations.csv # Processed conversation data ready for merging
+│   │   ├── raw_conversations.csv        # Raw conversation logs
+│   │   ├── merged_data.csv             # Combined demographic and conversation data
+│   │   ├── Demographics.csv            # Participant information from Microsoft Forms
+│   │   └── simulated_data.csv          # Simulated survey data
+│   └── S16 Example Data/            # Sample data for demonstration
+│       ├── S16.1 Simulated Data.csv    # Example simulated survey data
+│       ├── S16.2 Raw Conversations.csv # Example raw conversation data
+│       ├── S16.3 Structured Conversations.csv # Example processed conversation data
+│       ├── S16.4 Demographics.csv      # Example demographic information
+│       ├── S16.5 Merged Data.csv       # Example merged dataset
+│       └── Data dictionary.md           # Data field descriptions
+├── Assets/                          # Images and resources
+│   └── image/                       # Medication images and UI assets
+├── Prompts/                         # System prompts and templates
+│   ├── Chatbot prompt               # Conversation processing prompts
+│   └── Email prompt                 # Email reminder templates
 ├── api_keys.json                    # API credentials (not in repo)
 ├── api_keys_censored.json           # Censored API keys template
 ├── requirements.txt                 # Python dependencies
-├── .gitignore                      # Git ignore rules
-├── Assets/                         # Images and resources
-│   └── image/                      # Medication images and UI assets
-├── Data/                           # Output data directory (ignored by git)
-│   ├── structured_conversations.csv # Processed conversation data ready for merging
-│   ├── raw_conversations.csv        # Raw conversation logs
-│   ├── merged_data.csv             # Combined demographic and conversation data
-│   └── Demographics.csv            # Participant demographic information from Microsoftforms
-├── Example Data/                   # Sample data for demonstration 
-│   ├── raw_conversations.csv       # Example raw conversation data
-│   ├── structured_conversations.csv # Example processed conversation data
-│   ├── merged_data.csv            # Example merged dataset
-│   └── Demographics.csv           # Example demographic information
-└── Prompts/                        # System prompts and templates
-    ├── Email prompt                # Email reminder templates
-    └── Chatbot prompt              # Conversation processing prompts
+├── .gitignore                       # Git ignore rules
+└── readme.md                        # Project documentation
 ```
 
 ## Authors

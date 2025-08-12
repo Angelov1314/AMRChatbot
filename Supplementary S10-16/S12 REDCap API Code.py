@@ -5,7 +5,7 @@ def make_redcap_api_call():
     """Make a REDCap API call using the API keys from the JSON file"""
     
     # Load API keys
-    with open('api_keys.json', 'r') as f:
+    with open('../api_keys.json', 'r') as f:
         api_keys = json.load(f)
     
     # API endpoint

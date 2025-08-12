@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 
 # Load API keys from config file
-with open('api_keys.json', 'r') as f:
+with open('../api_keys.json', 'r') as f:
     api_keys = json.load(f)
 
 # Email config
@@ -18,8 +18,8 @@ port = api_keys['email_port']
 sender_email = api_keys['email_sender']
 password = api_keys['email_password']
 
-qr_path = 'Assets/image/1749194440597.jpg'
-logo_path = 'Assets/image/richmessage_1748246675760.jpg'
+qr_path = '../Assets/image/1749194440597.jpg'
+logo_path = '../Assets/image/richmessage_1748246675760.jpg'
 
 with open(qr_path, 'rb') as f:
     qr_data = f.read()
